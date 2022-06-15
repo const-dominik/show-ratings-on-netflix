@@ -1,6 +1,14 @@
 import { Search, Ratings } from "./IMDBResponses";
 import { ParsedRatings } from "./Ratings";
 
+// ==UserScript==
+// @name         Ratings on Netflix
+// @version      1.0
+// @author       const_domino
+// @match        https://www.netflix.com/browse*
+// @grant        none
+// ==/UserScript==
+
 const APIKEY = "your_api_key";
 const LANGUAGE: string = globalThis.netflix.reactContext.models.geo.data.preferredLocale.language;
 

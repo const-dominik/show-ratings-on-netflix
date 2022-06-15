@@ -1,4 +1,13 @@
-const APIKEY = "";
+// ==UserScript==
+// @name         Ratings on Netflix
+// @version      1.0
+// @author       const_domino
+// @match        https://www.netflix.com/browse*
+// @grant        none
+// ==/UserScript==
+
+const APIKEY = "your_api_key";
+
 const LANGUAGE = globalThis.netflix.reactContext.models.geo.data.preferredLocale.language;
 const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 const getTitles = async (title) => {
@@ -111,3 +120,4 @@ const runObserver = async () => {
     observer.observe(elementToObserve, config);
 };
 runObserver();
+export {};

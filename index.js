@@ -120,4 +120,3 @@ const runObserver = async () => {
     observer.observe(elementToObserve, config);
 };
 runObserver();
-export {};
